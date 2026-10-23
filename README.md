@@ -31,10 +31,10 @@ are required.
 > long-term stability, recovery and broader firmware compatibility remain unverified.
 > [Read the testing scope and limitations](docs/TESTING.md).
 
-[![Real Home Assistant Climate device overview with private room names and temperatures redacted](docs/images/climate-devices-overview.png)](docs/images/climate-devices-overview.png)
+[![Real Home Assistant Climate device overview with original room names and current/target temperatures](docs/images/climate-devices-overview.png)](docs/images/climate-devices-overview.png)
 
-*Real Home Assistant device overview supplied by the owner. Room names and
-temperature values are redacted; the visible widgets do not establish that
+*Real Home Assistant device overview with owner-approved room names and actual
+captured current/target temperatures. Visible widgets do not establish that
 Heating Control is enabled. [Explore the screenshot gallery](docs/images/README.md).*
 
 ## What you get
@@ -132,8 +132,10 @@ Standard Climate widgets may remain visible while control is OFF.
 
 ## Screenshots
 
-These are **real owner-supplied screenshots**, with private information covered
-by opaque masks and image metadata removed. No AI-generated or simulated UI is used.
+These are **real owner-supplied screenshots**, with the owner's approval to
+show room names, actual temperatures, heating states and normal sensor values.
+Only the MQTT broker address and username are masked; image metadata is removed.
+No AI-generated screenshots, reconstructed measurements or simulated UI are used.
 Select any image for full resolution; the [full gallery](docs/images/README.md)
 explains each view and the remaining captures.
 
@@ -142,9 +144,9 @@ explains each view and the remaining captures.
 <table>
   <tr><th>Controls</th><th>Sensors</th><th>Thermostat</th></tr>
   <tr>
-    <td valign="top"><a href="docs/images/device-controls.png"><img src="docs/images/device-controls.png" height="340" alt="Real HA Controls section; room names and temperatures redacted"></a></td>
-    <td valign="top"><a href="docs/images/device-sensors.png"><img src="docs/images/device-sensors.png" height="340" alt="Real HA Sensors section; names, values, household status and time redacted"></a></td>
-    <td valign="top"><a href="docs/images/thermostat-detail.png"><img src="docs/images/thermostat-detail.png" height="340" alt="Real HA thermostat dialog; room name and measured/target temperatures redacted"></a></td>
+    <td valign="top"><a href="docs/images/device-controls.png"><img src="docs/images/device-controls.png" height="340" alt="Real HA Controls section with room names, heating states and actual current/target temperatures"></a></td>
+    <td valign="top"><a href="docs/images/device-sensors.png"><img src="docs/images/device-sensors.png" height="340" alt="Real HA Sensors section with original names, measurements, alarm values and system status"></a></td>
+    <td valign="top"><a href="docs/images/thermostat-detail.png"><img src="docs/images/thermostat-detail.png" height="340" alt="Real HA thermostat dialog with its original room name and actual measured/target temperatures"></a></td>
   </tr>
 </table>
 
@@ -165,18 +167,19 @@ The pairing page shows stored pairing, and the Heating control page shows OFF.
 
 [![Overview — App v0.3.0](docs/images/ingress-overview.png)](docs/images/ingress-overview.png)
 
-**MQTT configuration — App v0.3.0.** Broker/account values redacted; forms are
+**MQTT configuration — App v0.3.0.** Only the broker address and username are
+hidden. Field labels, TLS port and explanatory text remain visible; forms are
 disabled in monitoring mode. This is the older file-based CA interface.
 
-[![MQTT configuration — App v0.3.0; broker details redacted](docs/images/mqtt-configuration.png)](docs/images/mqtt-configuration.png)
+[![MQTT configuration — App v0.3.0; only broker address and username hidden](docs/images/mqtt-configuration.png)](docs/images/mqtt-configuration.png)
 
 **Danfoss pairing — App v0.3.0.** An existing stored pairing; no pairing code or identity is shown.
 
 [![Danfoss pairing — App v0.3.0; existing stored pairing](docs/images/danfoss-pairing.png)](docs/images/danfoss-pairing.png)
 
-**Connection diagnostics — App v0.3.0.** Runtime status with the private read timestamp redacted.
+**Connection diagnostics — App v0.3.0.** Original runtime status and last-successful-read timestamp.
 
-[![Connection diagnostics — App v0.3.0; timestamp redacted](docs/images/connection-diagnostics.png)](docs/images/connection-diagnostics.png)
+[![Connection diagnostics — App v0.3.0; original status and timestamp visible](docs/images/connection-diagnostics.png)](docs/images/connection-diagnostics.png)
 
 **Heating control — App v0.3.0, OFF.** The actual permission/activation safety
 messages and disabled ON form. No ON screenshot was supplied.

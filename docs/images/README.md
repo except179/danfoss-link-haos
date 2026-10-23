@@ -1,46 +1,56 @@
 # Real screenshot gallery
 
 These nine screenshots were supplied by the owner from the actual application
-and Home Assistant. They are not AI-generated images or UI mockups. Only opaque
-privacy masks and lossless PNG metadata removal were applied; retained pixels,
-dimensions and UI layout are unchanged. No replacement room names, temperatures,
-functions or logos were invented. The original files and archive remain outside Git.
+and Home Assistant. The owner explicitly approved publishing the original room
+names, actual current/target temperatures, heating states, Climate/sensor names,
+normal sensor values, alarm OK/count and system status.
+
+Every output was recreated directly from the original archive, not from an
+already-redacted image. Only the actual MQTT broker address and username are
+covered by two small opaque masks. Image metadata is removed; all other pixels,
+dimensions, labels and UI text are unchanged. No AI-generated screenshot,
+reconstructed value, invented feature or replacement logo is used. The ZIP and
+unprocessed source files remain outside Git.
 
 **All five Ingress captures show App v0.3.0**, in an existing monitoring
 installation. They do not document v0.3.1 first-run setup, CA import or new readiness
-guidance. HA/Core/Supervisor versions and capture timestamps were not supplied
-for this gallery and are not inferred from the images.
+guidance. HA/Core/Supervisor versions and exact capture times were not supplied
+for this gallery. Normal recorded values and diagnostic read timestamps are
+shown as captured; they are not live readings or new validation results.
 
 ## Home Assistant overview
 
-[![Climate devices overview; private names and temperatures redacted](climate-devices-overview.png)](climate-devices-overview.png)
+[![Climate devices overview with original room names and actual current/target temperatures](climate-devices-overview.png)](climate-devices-overview.png)
 
 The README hero is the owner's real **climate-devices-overview.png** capture.
-Room names and measured/target temperatures are hidden. Visible widgets do not
-establish permission to change heating; standard Climate controls may appear
+Original room names and measured/target temperatures are visible with the owner's
+approval. Visible widgets do not establish permission to change heating; controls may appear
 while Heating Control is OFF.
 
 ## Controls
 
-[![Home Assistant Controls; names and temperatures redacted](device-controls.png)](device-controls.png)
+[![Home Assistant Controls with original room names, temperatures and heating states](device-controls.png)](device-controls.png)
 
-The actual device Controls section. Room names and numeric temperatures are
-redacted; the existing heating-state labels and widget layout are retained.
+The actual device Controls section, with original room names, current/target
+temperatures, Heating/Idle states and widget layout. No pixel redaction is
+applied to this image.
 
 ## Sensors
 
-[![Home Assistant Sensors; private names and values redacted](device-sensors.png)](device-sensors.png)
+[![Home Assistant Sensors with original sensor names, values, alarms and system status](device-sensors.png)](device-sensors.png)
 
 Separate current/target-temperature sensor labels and controller-status entries.
-Room-name prefixes, temperature readings, status/alarm values and relative read
-time are hidden. Sensor names retain the original UI language.
+Room names, temperature readings, alarm OK/count, system status and relative
+read time are visible. Sensor names retain the original UI language. No pixel
+redaction is applied to this image.
 
 ## Thermostat
 
-[![Home Assistant thermostat; room name and measured/target values redacted](thermostat-detail.png)](thermostat-detail.png)
+[![Home Assistant thermostat with its original room name and actual measured/target temperatures](thermostat-detail.png)](thermostat-detail.png)
 
-The real Climate more-info dialog, with its private room name and numeric
-measured/target values redacted. Dial artwork and controls are unchanged; a
+The real Climate more-info dialog, with the original room name and actual
+measured/target temperatures visible. No pixel redaction is applied. Dial artwork
+and controls are unchanged; a
 setpoint is not a measured room-air temperature or proof of physical warming.
 
 ## Overview — App v0.3.0
@@ -52,10 +62,12 @@ actions disabled. No identifying fields are visible in this supplied view.
 
 ## MQTT configuration — App v0.3.0
 
-[![Ingress MQTT configuration — App v0.3.0; broker details redacted](mqtt-configuration.png)](mqtt-configuration.png)
+[![Ingress MQTT configuration — App v0.3.0; only broker address and username hidden](mqtt-configuration.png)](mqtt-configuration.png)
 
-Broker address, TLS port and username values are hidden. Password fields are empty;
-configuration actions are disabled in monitoring mode. The screenshot shows
+Only the actual broker address and MQTT username are hidden with small masks
+inside their input fields. TLS port, all input/menu labels and explanatory text
+remain visible. Password fields are empty; configuration actions are disabled
+in monitoring mode. The screenshot shows
 v0.3.0's file-based CA interface, not v0.3.1's public CA import form.
 
 ## Danfoss pairing — App v0.3.0
@@ -68,10 +80,10 @@ This is not a new-user pairing capture or another physical pairing validation.
 
 ## Connection diagnostics — App v0.3.0
 
-[![Ingress Connection diagnostics — App v0.3.0; timestamp redacted](connection-diagnostics.png)](connection-diagnostics.png)
+[![Ingress Connection diagnostics — App v0.3.0; original status and timestamp visible](connection-diagnostics.png)](connection-diagnostics.png)
 
-The version label, runtime readiness and MQTT status are retained. The private
-last-successful-read timestamp is covered. A screenshot is a point-in-time view,
+The version label, runtime readiness, MQTT status and normal last-successful-read
+timestamp are retained. No pixel redaction is applied. A screenshot is a point-in-time view,
 not polling-continuity or long-running stability evidence.
 
 ## Heating control — App v0.3.0, OFF
@@ -84,14 +96,20 @@ or production connection was performed to prepare this gallery.
 
 ## Privacy and review
 
-Private room names, numeric temperatures, broker/account values, household
-status values and timestamps are covered where present. No browser URLs,
-credentials, private keys, certificate bodies/fingerprints or pairing codes
-are published. The unredacted originals, unused alternative overview and ZIP
-are excluded. Public output dimensions and checksums are in [manifest.json](manifest.json).
+The owner approved the room names, actual temperatures, heating states and
+normal sensor/system values shown here. Only security-sensitive values are
+concealed: the MQTT broker address and account name. No passwords, private
+controller identities, pairing codes, keys, certificates/fingerprints, tokens or
+session identifiers are visible in these captures. The unused alternative
+overview, ZIP and unprocessed source files are excluded. Public output dimensions
+and checksums are in [manifest.json](manifest.json).
 
-All nine outputs were inspected visually. A pixel comparison verified that
-every retained pixel equals the original and every redaction pixel is opaque.
+This approval applies to these owner-supplied examples; do not upload credentials
+or other people's installation data in bug reports.
+
+All nine final outputs were inspected visually. A pixel comparison verified
+that eight images preserve every original pixel. The MQTT image differs only
+inside the two approved security-value masks, which are fully opaque.
 PNG outputs contain only IHDR, pHYs, IDAT and IEND chunks; no text/EXIF/time metadata.
 The existing project icon and logo are unchanged.
 
@@ -103,6 +121,7 @@ The existing project icon and logo are unchanged.
 - In-flight settling and safe setup/error states on an authorized test instance.
 
 Do not pair, activate control, change settings or create a production failure
-solely for a screenshot. Future captures must retain real UI, remove private
-details and metadata, and identify the actual App version. No unavailable image
+solely for a screenshot. Future captures must retain real UI, obtain the owner's
+approval for visible installation data, remove security-sensitive values and
+metadata, and identify the actual App version. No unavailable image
 is represented by a broken link or fictional placeholder.

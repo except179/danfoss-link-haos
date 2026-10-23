@@ -3,9 +3,8 @@
   "review_date": "2026-10-23",
   "ai_generated": false,
   "runtime_or_production_changes": false,
-  "method": "deterministic opaque masks and metadata removal; no rescaling, UI reconstruction or invented values",
+  "method": "recreated from original archive; only actual MQTT broker address and username masked; metadata removed; no rescaling, reconstruction or invented values",
   "version_scope": "all five Ingress captures are App v0.3.0; v0.3.1 first-run UI is not shown",
-  "originals_or_original_archive_included": false,
   "images": [
     {
       "file": "climate-devices-overview.png",
@@ -13,12 +12,15 @@
       "app_version": "not independently supplied for this HA frontend capture",
       "width": 1151,
       "height": 498,
-      "sha256": "7794454c101c34d389afb0c51807790ebde7d9212e6bb178fb26a5b054500450",
-      "redactions": "Room-name suffixes and measured/target values",
+      "sha256": "cb83992a1888edc6d1e5a7b18045fa0dbb2792583375c7b3cea8c61984adaa28",
+      "redactions": "None; owner-approved room names, temperatures and heating states visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "device-controls.png",
@@ -26,12 +28,15 @@
       "app_version": "not independently supplied for this HA frontend capture",
       "width": 431,
       "height": 649,
-      "sha256": "1131bea14b1bd34b60091d6b115b620d33b3aa310a32d4568fff6bf35edcc386",
-      "redactions": "Room names and measured/target numeric values",
+      "sha256": "8c3751f0b13525069e8c77eb1f98b139214ec9f8192825aadd98a73d51083302",
+      "redactions": "None; owner-approved room names, current/target temperatures and heating states visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "device-sensors.png",
@@ -39,12 +44,15 @@
       "app_version": "not independently supplied for this HA frontend capture",
       "width": 307,
       "height": 887,
-      "sha256": "3ff59f195ffd5a6e0b4eea783a10813332668954e99eadc5bb06deb0b025f251",
-      "redactions": "Room-name prefixes and all value/status/time cells",
+      "sha256": "0ce07b88ec85031b7acd6f641d09bfad0b46aaa8ae33abc460f0f760ed27f92f",
+      "redactions": "None; owner-approved names, measurements, alarms, system status and relative read time visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "thermostat-detail.png",
@@ -52,12 +60,15 @@
       "app_version": "not independently supplied for this HA frontend capture",
       "width": 567,
       "height": 575,
-      "sha256": "79a0b6e7167beb9034f4655f3759eb47f07d734565e39f8b82c99b3a109f0542",
-      "redactions": "Room name, measured temperature and target number",
+      "sha256": "b343d2f729452322b43169548925df98052ddcd32d174bed53c29eff74c7d6d9",
+      "redactions": "None; owner-approved room name and measured/target values visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "ingress-overview.png",
@@ -66,11 +77,14 @@
       "width": 913,
       "height": 877,
       "sha256": "c408289243aa4cae0e21690de2903cbd62e16aead0e02d361480c14a7a0f4221",
-      "redactions": "Reviewed: no identifying values visible",
+      "redactions": "None; no credentials or private identities visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "mqtt-configuration.png",
@@ -78,12 +92,15 @@
       "app_version": "0.3.0",
       "width": 546,
       "height": 895,
-      "sha256": "05c24be2997af2230d66597443f6de8d992ca515bc082d33bbae328c6c6f3570",
-      "redactions": "Broker host, port and account values",
+      "sha256": "49983d72ecdbbe62fbc405ffc1a7f438f4c92d0c938597cc2775c6349ada6309",
+      "redactions": "Only the actual MQTT broker address and username; labels, TLS port and explanatory text retained",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 2,
+      "all_original_pixels_preserved": false,
+      "recreated_from_original_archive": true
     },
     {
       "file": "danfoss-pairing.png",
@@ -92,11 +109,14 @@
       "width": 731,
       "height": 884,
       "sha256": "513ee5cf00d444ee95c332c15b05f18d671ce58bb9c09acb6e0e61c3b167335f",
-      "redactions": "Reviewed stored-state screen: no identity/code/certificate visible",
+      "redactions": "None; no pairing code, private identity or certificate visible",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "connection-diagnostics.png",
@@ -104,12 +124,15 @@
       "app_version": "0.3.0",
       "width": 735,
       "height": 780,
-      "sha256": "44d0f3fbff8790e1d9afbbe70e760819fd00aecd5841ebaeedba17e5e3cacc24",
-      "redactions": "Household last-success timestamp",
+      "sha256": "00e3fe2809a6aba341862be9895147df3420385dc3c65866e2846395f82f5cb4",
+      "redactions": "None; normal runtime status and read timestamp retained",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     },
     {
       "file": "heating-control-off.png",
@@ -118,11 +141,29 @@
       "width": 495,
       "height": 789,
       "sha256": "47df1652c0cbbe162950aed11be32b8b99efe16e209f5294b55d14a6d87794bf",
-      "redactions": "Reviewed OFF screen: no identifying values visible",
+      "redactions": "None; complete explanatory text and OFF controls retained",
       "retained_pixels_match_original": true,
       "privacy_masks_fully_opaque": true,
       "metadata": "IHDR, pHYs, IDAT and IEND only; no EXIF/text/time metadata",
-      "visual_review": "completed offline before publication"
+      "visual_review": "all final images inspected offline with owner-approved names and measurements visible",
+      "redaction_regions": 0,
+      "all_original_pixels_preserved": true,
+      "recreated_from_original_archive": true
     }
-  ]
+  ],
+  "owner_approved_visible_information": [
+    "room and Climate entity names",
+    "actual current and target temperatures",
+    "heating/idle states",
+    "sensor names and normal values",
+    "alarm OK and alarm count",
+    "normal system status and diagnostic read timestamps"
+  ],
+  "pixel_masks": {
+    "mqtt-configuration.png": [
+      "MQTT broker address",
+      "MQTT username"
+    ]
+  },
+  "original_archive_or_unprocessed_files_included": false
 }

@@ -23,8 +23,9 @@ Preview, not Stable or certified. Controller schedules remain authoritative;
 HA permissions and broker ACLs matter when control is ON.
 
 The README shows the original logo, a real Home Assistant Climate-device hero,
-Controls/Sensors/thermostat views and all five Ingress pages. Private details
-are redacted; the Ingress captures are labeled App v0.3.0 and do not represent
+Controls/Sensors/thermostat views and all five Ingress pages. Room names and
+actual temperatures are shown with owner approval; only the MQTT broker address
+and username are hidden. The Ingress captures are labeled App v0.3.0 and do not represent
 the v0.3.1 first-run UI.
 Please use GitHub Issues for bugs, installation feedback and suggestions.
 Never post credentials, pairing state, certificates, backups or household data.
