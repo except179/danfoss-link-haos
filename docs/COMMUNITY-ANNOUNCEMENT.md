@@ -22,8 +22,10 @@ broader firmware and recovery remain unverified. This is an Experimental
 Preview, not Stable or certified. Controller schedules remain authoritative;
 HA permissions and broker ACLs matter when control is ON.
 
-The README shows the original logo. Real sanitized App screenshots are pending;
-add reviewed captures before a later visual announcement if available.
+The README shows the original logo, a real Home Assistant Climate-device hero,
+Controls/Sensors/thermostat views and all five Ingress pages. Private details
+are redacted; the Ingress captures are labeled App v0.3.0 and do not represent
+the v0.3.1 first-run UI.
 Please use GitHub Issues for bugs, installation feedback and suggestions.
 Never post credentials, pairing state, certificates, backups or household data.
 For vulnerabilities, follow SECURITY.md.

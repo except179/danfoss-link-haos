@@ -9,8 +9,10 @@
 > **Do not add this repository through HACS. This is a Home Assistant OS App, not a HACS integration.**
 > Install it through **Settings → Apps → App Store / Install app → three-dot menu → Repositories**.
 
-Monitor room temperatures and optionally change room targets through a Home
-Assistant OS App. Your Danfoss Link CC continues to manage its own heating schedules.
+Bring room temperatures, target setpoints and available heating status into
+Home Assistant with Climate entities and separate sensors. Configure MQTT,
+independent controller pairing and diagnostics through the App Web UI. Room-target
+control is optional and explicitly enabled; your Danfoss Link CC keeps its own schedules.
 
 ![Experimental Preview](https://img.shields.io/badge/status-Experimental_Preview-f59e0b)
 ![Version 0.3.1](https://img.shields.io/badge/version-0.3.1-0891b2)
@@ -28,6 +30,12 @@ are required.
 > independently installed on another real HAOS system. Fresh installation,
 > long-term stability, recovery and broader firmware compatibility remain unverified.
 > [Read the testing scope and limitations](docs/TESTING.md).
+
+[![Real Home Assistant Climate device overview with private room names and temperatures redacted](docs/images/climate-devices-overview.png)](docs/images/climate-devices-overview.png)
+
+*Real Home Assistant device overview supplied by the owner. Room names and
+temperature values are redacted; the visible widgets do not establish that
+Heating Control is enabled. [Explore the screenshot gallery](docs/images/README.md).*
 
 ## What you get
 
@@ -124,10 +132,58 @@ Standard Climate widgets may remain visible while control is OFF.
 
 ## Screenshots
 
-Real sanitized screenshots are not yet available. The approved logo above is
-original artwork, not a simulated App view. The [owner capture checklist](docs/images/README.md)
-covers Overview, MQTT, pairing, diagnostics, control OFF/ON, thermostat and discovered entities.
-Reviewed real captures will be added here; no fictional UI or broken placeholders are included.
+These are **real owner-supplied screenshots**, with private information covered
+by opaque masks and image metadata removed. No AI-generated or simulated UI is used.
+Select any image for full resolution; the [full gallery](docs/images/README.md)
+explains each view and the remaining captures.
+
+### Home Assistant: Controls, Sensors and thermostat
+
+<table>
+  <tr><th>Controls</th><th>Sensors</th><th>Thermostat</th></tr>
+  <tr>
+    <td valign="top"><a href="docs/images/device-controls.png"><img src="docs/images/device-controls.png" height="340" alt="Real HA Controls section; room names and temperatures redacted"></a></td>
+    <td valign="top"><a href="docs/images/device-sensors.png"><img src="docs/images/device-sensors.png" height="340" alt="Real HA Sensors section; names, values, household status and time redacted"></a></td>
+    <td valign="top"><a href="docs/images/thermostat-detail.png"><img src="docs/images/thermostat-detail.png" height="340" alt="Real HA thermostat dialog; room name and measured/target temperatures redacted"></a></td>
+  </tr>
+</table>
+
+Climate widgets can appear even while Heating Control is OFF. These captures
+show the actual HA presentation, not proof that a visible button can write.
+HA frontend versions were not supplied.
+
+### App Web UI: all five Ingress pages — v0.3.0
+
+**Every Ingress capture below is from App v0.3.0**, in an existing monitoring
+installation. They do not show the v0.3.1 first-run workflow or its public CA import.
+The pairing page shows stored pairing, and the Heating control page shows OFF.
+
+<details>
+<summary>View all five real Ingress pages — v0.3.0</summary>
+
+**Overview — App v0.3.0.** Monitoring mode and saved pairing status.
+
+[![Overview — App v0.3.0](docs/images/ingress-overview.png)](docs/images/ingress-overview.png)
+
+**MQTT configuration — App v0.3.0.** Broker/account values redacted; forms are
+disabled in monitoring mode. This is the older file-based CA interface.
+
+[![MQTT configuration — App v0.3.0; broker details redacted](docs/images/mqtt-configuration.png)](docs/images/mqtt-configuration.png)
+
+**Danfoss pairing — App v0.3.0.** An existing stored pairing; no pairing code or identity is shown.
+
+[![Danfoss pairing — App v0.3.0; existing stored pairing](docs/images/danfoss-pairing.png)](docs/images/danfoss-pairing.png)
+
+**Connection diagnostics — App v0.3.0.** Runtime status with the private read timestamp redacted.
+
+[![Connection diagnostics — App v0.3.0; timestamp redacted](docs/images/connection-diagnostics.png)](docs/images/connection-diagnostics.png)
+
+**Heating control — App v0.3.0, OFF.** The actual permission/activation safety
+messages and disabled ON form. No ON screenshot was supplied.
+
+[![Heating control — App v0.3.0, OFF](docs/images/heating-control-off.png)](docs/images/heating-control-off.png)
+
+</details>
 
 ## Help and feedback
 
