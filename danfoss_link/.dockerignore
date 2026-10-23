@@ -1,0 +1,13 @@
+**
+!Dockerfile
+!rootfs/
+!rootfs/**
+!vendor/
+!vendor/src/
+!vendor/src/**
+!vendor/tests/
+!vendor/tests/**
+!vendor/LICENSE
+!vendor/THIRD_PARTY_NOTICES.md
+!vendor/patches/
+!vendor/patches/**

@@ -1,0 +1,51 @@
+name: Danfoss Link for HAOS — by P.K. Except
+version: "0.3.1"
+slug: danfoss_link_monitor
+description: Unofficial Danfoss Link CC monitoring and optional room targets by Povilas Kucinskas (P.K. Except); original MQTT bridge by Leif Neland.
+url: https://github.com/except179/danfoss-link-haos
+arch:
+  - amd64
+startup: application
+boot: manual
+init: true
+stage: experimental
+timeout: 30
+apparmor: true
+host_network: false
+homeassistant_api: false
+hassio_api: false
+auth_api: false
+docker_api: false
+stdin: false
+tmpfs: true
+ingress: true
+ingress_port: 8099
+panel_admin: true
+panel_title: Danfoss Link for HAOS
+panel_icon: mdi:radiator
+backup: cold
+backup_exclude:
+  - state/runtime.json
+map:
+  - type: app_config
+    read_only: true
+options:
+  operation: setup
+  mqtt_host: ""
+  mqtt_port: 8883
+  mqtt_username: ""
+  mqtt_tls: true
+  danfoss_allow_writes: false
+  poll_interval: 60
+  topic_prefix: danfoss_link
+  discovery_prefix: homeassistant
+schema:
+  operation: list(setup|monitor)
+  mqtt_host: str
+  mqtt_port: port
+  mqtt_username: str
+  mqtt_tls: bool
+  danfoss_allow_writes: bool
+  poll_interval: int(60,3600)
+  topic_prefix: match(^[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)*$)
+  discovery_prefix: match(^[A-Za-z0-9_-]+(/[A-Za-z0-9_-]+)*$)

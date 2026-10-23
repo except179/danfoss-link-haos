@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest an improvement for Home Assistant users.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: Keep credentials, pairing state, backups and all household/network data out of this request. Use SECURITY.md for vulnerabilities.
+  - type: textarea
+    id: need
+    attributes:
+      label: User need
+      description: What would this help you do?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior
+      description: Include safety and compatibility considerations, without private data.
+  - type: input
+    id: versions
+    attributes:
+      label: App and HAOS versions, if relevant
+      description: Versions and architecture only; no network identifiers.
+  - type: input
+    id: controller
+    attributes:
+      label: Controller model and firmware, if known
+      description: Do not include serial numbers or controller IDs.

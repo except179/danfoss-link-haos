@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="100" viewBox="0 0 250 100" role="img" aria-label="Danfoss Link for HAOS by P.K. Except">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#203b53"/><stop offset="1" stop-color="#102131"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="246" height="96" rx="20" fill="url(#panel)" stroke="#547186"/>
+  <g transform="translate(8 15) scale(.55)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m22 63 37-32 37 32M29 63v34a5 5 0 0 0 5 5h50a5 5 0 0 0 5-5V63" fill="none" stroke="#7bd8ed" stroke-width="5"/>
+    <path d="M54 78V59a5 5 0 0 1 10 0v19a10 10 0 1 1-10 0Z" fill="#183044" stroke="#edf3f7" stroke-width="3.5"/>
+    <path d="M59 66v21" stroke="#f5aa6c" stroke-width="4"/>
+    <circle cx="59" cy="87" r="5" fill="#f5aa6c"/>
+    <path d="M85 29a18 18 0 0 1 25 0m-20 6a11 11 0 0 1 15 0" fill="none" stroke="#7bd8ed" stroke-width="3.5"/>
+    <circle cx="97.5" cy="42" r="2.5" fill="#f5aa6c"/>
+  </g>
+  <g font-family="DejaVu Sans, sans-serif">
+    <text x="81" y="36" font-size="18" font-weight="bold" fill="#edf3f7">Danfoss Link</text>
+    <text x="82" y="56" font-size="14" font-weight="bold" letter-spacing=".4" fill="#a2dafa">for HAOS</text>
+    <text x="82" y="77" font-size="11" fill="#c2d3df">by P.K. Except</text>
+  </g>
+</svg>

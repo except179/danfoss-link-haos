@@ -1,0 +1,28 @@
+configuration:
+  operation:
+    name: Operating mode
+    description: Choose setup to configure MQTT and pair a new controller client. Choose monitor only after verifying saved identity. Save and restart this App after changing mode.
+  mqtt_host:
+    name: MQTT broker address
+    description: Blank means unconfigured in setup. Enter your own broker host or address matching its TLS certificate. Saved Web UI settings take precedence. Monitoring requires a complete connection.
+  mqtt_port:
+    name: MQTT TLS port
+    description: Use your broker's configured TLS port. 8883 is a common default. Plaintext connections are not supported.
+  mqtt_username:
+    name: MQTT username
+    description: Blank means unconfigured in setup. Use your own dedicated account and enter its password in Open Web UI, never here. Saved Web UI settings take precedence.
+  mqtt_tls:
+    name: Require verified MQTT TLS
+    description: Keep enabled. The App requires a trusted public CA and a matching broker certificate identity. Disabling this option stops the App.
+  danfoss_allow_writes:
+    name: Allow heating control
+    description: Permit optional room target changes. Save and restart to load this permission. Actual control still requires explicit confirmation and ON in the App Web UI. Default is off.
+  poll_interval:
+    name: Refresh interval
+    description: Seconds between scheduled controller reads, from 60 to 3600. Default is 60 seconds. A configured interval does not guarantee uninterrupted updates.
+  topic_prefix:
+    name: MQTT device topic prefix
+    description: Advanced setting. Keep the default danfoss_link unless you understand topic permissions. Changing it after setup can disrupt existing entities and ACLs.
+  discovery_prefix:
+    name: MQTT discovery prefix
+    description: Advanced setting. Default homeassistant must match Home Assistant MQTT discovery. Keep unchanged after setup to preserve discovery continuity.
