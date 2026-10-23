@@ -2,6 +2,9 @@
 
 **v0.3.1 Experimental Preview · amd64 · Home Assistant OS/Supervisor**
 
+> **Do not add this repository through HACS. This is a Home Assistant OS App, not a HACS integration.**
+> Use **Settings → Apps → App Store / Install app → three-dot menu → Repositories**.
+
 Bring your Danfoss Link CC heating system into Home Assistant. Monitor room
 temperatures through MQTT discovery and optionally change room targets.
 Free and open-source; no subscription, paid activation or maintainer account.

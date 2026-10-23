@@ -1,13 +1,21 @@
 # Installation
 
+> **Do not add this repository through HACS. This is a Home Assistant OS App, not a HACS integration.**
+> HACS Custom Repositories cannot install it. Use Home Assistant's App repository screen below.
+
 **v0.3.1 Experimental Preview · amd64 only · Home Assistant OS/Supervisor.**
 
-1. Open **Settings → Apps → Install app → top-right menu → Repositories**.
-2. Add `https://github.com/except179/danfoss-link-haos`.
-3. Select **Danfoss Link for HAOS — by P.K. Except** and **Install**.
-4. Keep setup mode, TLS enabled and heating permission disabled. Start the App
-   and select **Open Web UI** as an administrator.
-5. Follow the [full first-time setup guide](../danfoss_link/DOCS.md).
+1. Open Home Assistant.
+2. Navigate to **Settings → Apps**.
+3. Open **App Store / Install app**.
+4. Open the **three-dot menu → Repositories**.
+5. Add `https://github.com/except179/danfoss-link-haos`.
+6. Find **Danfoss Link for HAOS — by P.K. Except**.
+7. Select **Install** and follow the [setup instructions](../danfoss_link/DOCS.md).
+
+Keep setup mode, TLS enabled and heating permission disabled. Start the App
+and select **Open Web UI** as an administrator. Older frontends may call Apps
+**Add-ons** and the App Store **Add-on Store**; neither route uses HACS.
 
 Supervisor discovers `repository.yaml` and `danfoss_link/config.yaml`, then
 builds the included Dockerfile on the HAOS host because no `image` field is

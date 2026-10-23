@@ -24,7 +24,10 @@ Preserve an off-device backup; its contents and restore need separate verificati
 
 ## Install through Home Assistant
 
-Use **Settings → Apps → Install app → top-right menu → Repositories**.
+> **Do not add this repository through HACS. This is a Home Assistant OS App, not a HACS integration.**
+
+Open Home Assistant → **Settings → Apps → App Store / Install app →
+three-dot menu → Repositories**.
 Add `https://github.com/except179/danfoss-link-haos`, select **Danfoss Link for
 HAOS — by P.K. Except** and choose **Install**. Supervisor builds the included
 Dockerfile on amd64; internet access to the pinned upstream base is required. This is a Supervisor App, not HACS. Do not add the

@@ -6,6 +6,9 @@
 
 **Bring your Danfoss Link CC heating system into Home Assistant.**
 
+> **Do not add this repository through HACS. This is a Home Assistant OS App, not a HACS integration.**
+> Install it through **Settings → Apps → App Store / Install app → three-dot menu → Repositories**.
+
 Monitor room temperatures and optionally change room targets through a Home
 Assistant OS App. Your Danfoss Link CC continues to manage its own heating schedules.
 
@@ -54,12 +57,17 @@ compatible. See [compatibility](docs/COMPATIBILITY.md).
 
 [![Add repository to Home Assistant](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fexcept179%2Fdanfoss-link-haos)
 
-1. Open **Settings → Apps → Install app**.
-2. Open the top-right menu → **Repositories**.
-3. Add **`https://github.com/except179/danfoss-link-haos`**.
-4. Select **Danfoss Link for HAOS — by P.K. Except**, then **Install**.
-5. Keep **Setup**, verified TLS and heating permission OFF. Start the App and
-   select **Open Web UI** as an administrator.
+1. Open Home Assistant.
+2. Navigate to **Settings → Apps**.
+3. Open **App Store / Install app**.
+4. Open the **three-dot menu → Repositories**.
+5. Add **`https://github.com/except179/danfoss-link-haos`**.
+6. Find **Danfoss Link for HAOS — by P.K. Except**.
+7. Select **Install** and follow the [setup instructions](danfoss_link/DOCS.md).
+
+Keep **Setup**, verified TLS and heating permission OFF. Start the App and
+select **Open Web UI** as an administrator. HACS Custom Repositories is the
+wrong installation screen for this App.
 
 Supervisor builds this App from the included Dockerfile on your amd64 HAOS host,
 using a pinned upstream base image. Internet access to retrieve it is required;
